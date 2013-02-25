@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("prlib", "for prlib support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("prlib", "enable prlib support", "no");
+
+if (PHP_PRLIB != "no") {
+	EXTENSION("prlib", "prlib.c");
+}
+
